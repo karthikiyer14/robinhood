@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robinhood Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Robinhood Clone</h1>
+    </header>
+    <main>
+        <section class="stock-list">
+            <h2>Stock Prices</h2>
+            <div id="stocks"></div>
+        </section>
+        <section class="trade-form">
+            <h2>Trade</h2>
+            <form id="trade-form">
+                <input type="text" id="stock-symbol" placeholder="Stock Symbol" required>
+                <input type="number" id="stock-quantity" placeholder="Quantity" required>
+                <select id="trade-type">
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div id="portfolio"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
